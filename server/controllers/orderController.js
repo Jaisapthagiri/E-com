@@ -1,7 +1,6 @@
-import Order from "../models/orderModel.js";
-import Product from "../models/productModel.js";
+import Order from "../models/Order.js";
+import Product from "../models/Product.js";
 
-// ✅ Place COD order
 export const placeOrderCOD = async (req, res) => {
     try {
         const userId = req.user.id;
