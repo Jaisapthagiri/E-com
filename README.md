@@ -1,4 +1,4 @@
-# 🛍️ Mock E-Commerce Cart
+# E-Commerce Cart
 
 A **full-stack shopping cart web app** built using the **MERN Stack** (MongoDB, Express, React, Node.js).
 Users can browse products, add or remove them from the cart, view totals, simulate a checkout, confirm their order, and view their past orders.
@@ -32,6 +32,8 @@ This project was developed as part of the **E-Commerce Full Stack**.
 | **HTTP Client**    | Axios with Interceptors      |
 
 ---
+
+## YouTube Link - https://www.youtube.com/watch?v=mz3FqZi42qg
 
 ## ⚙️ Installation & Setup
 
