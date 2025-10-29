@@ -1,24 +1,22 @@
 import jwt from 'jsonwebtoken';
 
 const authUser = async (req, res, next) => {
-    const { token } = req.cookies;
-
-    if (!token) {
-        return res.json({ success: false, message: "Problem on your chrome,Try login other Browser" }); 
-    }
-
     try {
-        const tokenDecode = jwt.verify(token, process.env.JWT_SECRET);
-        if (tokenDecode.id) {
-            req.user = { id: tokenDecode.id };
-            next();
-        } else {
+        const authHeader = req.headers.authorization;
+        if (!authHeader || !authHeader.startsWith("Bearer ")) {
             return res.status(401).json({ success: false, message: "Not Authorized" });
         }
+
+        const token = authHeader.split(" ")[1];
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+        req.user = { id: decoded.id };
+        next();
     } catch (error) {
-        return res.json({ success: false, message: error.message });
+        return res.status(401).json({ success: false, message: "Invalid or expired token" });
     }
 };
+
 
 export default authUser;
 
