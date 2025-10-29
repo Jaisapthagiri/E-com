@@ -11,7 +11,7 @@ const Payment = () => {
         getCartAmount,
         axios,
         setCartItems,
-        navigate,
+        navigate, user
     } = useAppContext();
 
     const [cartArray, setCartArray] = useState([]);
@@ -53,6 +53,16 @@ const Payment = () => {
     return (
         <div className="mt-20 max-w-3xl mx-auto p-6 border rounded-lg shadow-sm bg-white">
             <h1 className="text-2xl font-semibold mb-4 text-center">🧾 Order Receipt</h1>
+            <div className="flex flex-col items-center text-center mb-8">
+                <h2 className="text-3xl font-semibold text-gray-800 mb-1">
+                    To: <span className="text-purple-600">{user.name}</span>
+                </h2>
+                <p className="text-gray-500 text-lg">
+                    Receipt has been sent to : <span className="font-medium text-gray-700">{user.email}</span>
+                </p>
+                <div className="w-24 h-1 bg-gray-200 rounded-full mt-3"></div>
+            </div>
+
             <hr className="mb-4" />
 
             {cartArray.map((item) => (

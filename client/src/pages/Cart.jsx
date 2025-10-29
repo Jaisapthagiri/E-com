@@ -11,7 +11,7 @@ const Cart = () => {
     getCartCount,
     updateCartItem,
     navigate,
-    getCartAmount,
+    getCartAmount
   } = useAppContext();
 
   const [cartArray, setCartArray] = useState([]);
