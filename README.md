@@ -34,6 +34,7 @@ This project was developed as part of the **E-Commerce Full Stack**.
 ---
 
 ## YouTube Link - https://www.youtube.com/watch?v=mz3FqZi42qg
+## Screenshot Images - https://drive.google.com/drive/folders/1DCBbonB3bZKz8z3MUJaksnXGc6Ns0729
 
 ## ⚙️ Installation & Setup
 
