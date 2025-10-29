@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
                 navigate(`/products/${product.category.toLowerCase()}/${product._id}`);
                 scrollTo(0, 0);
             }}
-            className="border border-gray-500/20 rounded-md md:px-4 px-3 py-2 bg-white w-full"
+            className="border border-gray-500/20 rounded-md md:px-4 px-3 py-2  w-full"
         >
             <div className="group cursor-pointer flex items-center justify-center px-2">
                 <img

@@ -40,13 +40,13 @@ const App = () => {
   }
 
   return (
-    <div className="no-scrollbar text-default min-h-screen text-gray-700 bg-white">
+    <div className="no-scrollbar text-default min-h-screen text-gray-700 bg-linear-to-b from-blue-200 to-transparent">
       {showUserLogin && <Login />}
 
       <Toaster />
       <Navbar />
 
-      <div className="px-6 md:px-16 lg:px-24 xl:px-32 py-6">
+      <div className="px-6 md:px-16 lg:px-24 xl:px-32 py-6 ">
         <Routes>
           <Route path="/" element={<Home />} />
 

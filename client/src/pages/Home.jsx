@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-linear-to-b from-pink-100 via-white to-blue-100">
+    <div className="min-h-screen bg-linear-to-b">
 
       <section
         className="relative bg-cover  h-[80vh] flex items-center justify-center"
