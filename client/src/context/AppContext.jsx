@@ -153,6 +153,8 @@ export const AppContextProvider = ({ children }) => {
         const token = localStorage.getItem("token");
         if (token) {
             fetchUser();
+        }else{
+            setLoadingUser(false)
         }
         fetchProducts();
     }, []);
